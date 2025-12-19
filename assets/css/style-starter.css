@@ -2395,7 +2395,7 @@
 
 .w3l-header-4 header {
   transition: all 0.4s ease 0s;
-  height: 70px;
+  height: 100px;
   display: grid;
   align-items: center;
   background: rgba(255, 255, 255, 0.18); }
