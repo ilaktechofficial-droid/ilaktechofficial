@@ -1,0 +1,400 @@
+<!--
+   Author: W3layouts
+   Author URL: http://w3layouts.com
+-->
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Contact</title>
+
+    <!-- Template CSS -->
+    <link rel="stylesheet" href="assets/css/style-starter.css">
+    <link href="//fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+  </head>
+  <body id="home">
+<section class=" w3l-header-4">
+	<!--header-->
+	<header id="site-header" class="site-header">
+		<div class="container">
+			<nav class="navbar navbar-expand-lg navbar-dark stroke">
+				<h1><a class="navbar-brand" href="index.html">
+					 <img src="assets/images/logo.png" alt="Your logo" title="Your logo" height="50" width="600" />
+				</a></h1>
+				<!-- if logo is image enable this   
+			<a class="navbar-brand" href="#index.html">
+				<img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
+			</a> -->
+				<button class="navbar-toggler  collapsed bg-gradient" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+					<span class="navbar-toggler-icon fa icon-close fa-times"></span>
+					
+				</button>
+	  
+				<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item @@home__active">
+							<a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item @@about__active">
+							<a class="nav-link" href="about.html">About Us</a>
+						</li>
+						<li class="nav-item @@services__active">
+							<a class="nav-link" href="services.html">Services</a>
+						</li>
+						<li class="nav-item active">
+							<a class="nav-link" href="contact.html">Contact</a>
+						</li>
+					</ul>
+				</div>
+				        <!-- toggle switch for light and dark theme -->
+						<div class="mobile-position">
+							<label class="theme-selector">
+							  <input type="checkbox" id="themeToggle">
+							  <i class="gg-sun"></i>
+							  <i class="gg-moon"></i>
+							</label>
+						  </div>
+						  <!-- //toggle switch for light and dark theme -->
+			</nav>
+		</div>
+	  </header>
+	<!--/header-->
+</section>
+<script src="assets/js/jquery-3.3.1.min.js"></script> <!-- Common jquery plugin -->
+<!--bootstrap working-->
+<script src="assets/js/bootstrap.min.js"></script>
+<!--bootstrap working//-->
+<!--/MENU-JS-->
+<script>
+	$(window).on("scroll", function () {
+	  var scroll = $(window).scrollTop();
+  
+	  if (scroll >= 80) {
+		$("#site-header").addClass("nav-fixed");
+	  } else {
+		$("#site-header").removeClass("nav-fixed");
+	  }
+	});
+  
+	//Main navigation Active Class Add Remove
+	$(".navbar-toggler").on("click", function () {
+	  $("header").toggleClass("active");
+	});
+	$(document).on("ready", function () {
+	  if ($(window).width() > 991) {
+		$("header").removeClass("active");
+	  }
+	  $(window).on("resize", function () {
+		if ($(window).width() > 991) {
+		  $("header").removeClass("active");
+		}
+	  });
+	});
+  </script>
+  <!--//MENU-JS-->
+<!-- disable body scroll which navbar is in active -->
+<script>
+$(function () {
+  $('.navbar-toggler').click(function () {
+    $('body').toggleClass('noscroll');
+  })
+});
+</script>
+<!-- disable body scroll which navbar is in active -->
+<!--theme switcher dark and light mode script-->
+<script>
+	const bodyElement = document.querySelector('body');
+	const themeToggle = document.querySelector('#themeToggle');
+	const darkModeMql = window.matchMedia('(prefers-color-scheme: dark)');
+  
+	const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : userPreference(darkModeMql);
+  
+	if (currentTheme) {
+	  bodyElement.classList.add(currentTheme);
+  
+	  if (currentTheme === 'dark') {
+		themeToggle.checked = true;
+	  }
+	}
+  
+	function userPreference(e) {
+	  if (e.matches) {
+		bodyElement.classList.add("dark");
+		bodyElement.classList.remove("light");
+		return "dark"
+	  } else {
+		bodyElement.classList.remove("dark");
+		bodyElement.classList.add("light");
+		return "light"
+	  }
+	}
+  
+	darkModeMql.addListener(userPreference);
+  
+	function themeSwitcher(e) {
+	  if (e.target.checked) {
+		bodyElement.classList.add('dark');
+		bodyElement.classList.remove("light");
+		localStorage.setItem('theme', 'dark');
+	  } else {
+		bodyElement.classList.remove('dark');
+		bodyElement.classList.add("light");
+		localStorage.setItem('theme', 'light');
+	  }
+	}
+  
+	themeToggle.addEventListener('change', themeSwitcher);
+	
+  </script>
+  <!--theme switcher dark and light mode script//-->
+
+
+
+<!-- breadcrumbs -->
+<!--<section class="w3l-inner-banner-main">
+    <div class="about-inner blog-single editContent">
+        <div class="container">   
+        <div class="breadcrumbs-sub">
+            <ul class="breadcrumbs-custom-path">
+                <li class="right-side propClone"><a href="index.html" class="editContent">Home <span class="fa fa-angle-right" aria-hidden="true"></span></a> <p></li>
+                <li class="active editContent">
+                    Contact</li>
+            </ul>
+            </div>
+</div>
+</div>
+</section>-->
+<!-- breadcrumbs //-->
+ <br>
+ <br>
+
+<section class="w3l-contact-info-main" id="contact">
+    <div class="contact-sec	editContent">
+        <div class="container">
+
+
+            <div class="d-grid contact-view">
+
+                <div class="cont-details ">
+                    <h3 class="sub-title">Get in touch</h3> 
+                    <p class="para mt-3 mb-4">Have a requirement, question, or inquiry? Fill out the form and our team will get back to you at the earliest.</p>
+                    
+                    <div class="cont-top ">
+                        <h6 class="mt-4 cont-left">Address:</h6>
+                        <div class="cont-right">
+                            <p class="para mt-1"> ILAK TECH Innovation Meets Inclusion<br> Madurai, Tamilnadu, India.</p>
+                        </div>
+                    </div><div class="cont-top margin-up">
+                        <h6 class="mt-4 cont-left">Contact:</h6>
+                        <div class="cont-right">
+                            <p class="para mt-1"><a href="tel:+44 99 555 42">+123 45 67 89</a></p>
+                            <p class="para"><a href="tel:+111 45 67 99">+111 45 67 99</a></p>
+                        </div>
+                    </div>
+                    <div class="cont-top margin-up">
+                        <h6 class="mt-4 cont-left">Email:</h6>
+                        <div class="cont-right">
+                            <p class="para mt-1"><a href="mailto:example@mail.com" class="mail">ilaktechofficial@gmail.com</a></p>
+                        </div>
+                    </div>
+                    <div class="cont-top margin-up">
+                        <h6 class="mt-4 cont-left">Office Hours:</h6>
+                        <div class="cont-right">
+                            <p class="para mt-1">
+								Monday - Saturday <br />
+								9:00 AM - 6:00 PM <br />
+								24/7 Support Available for employers, clients, and candidates.
+							</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="map-content-9 pl-lg-5 ">
+                    <form class="submit-form">
+                        <div class="twice-two">
+                            <input type="text" class="form-control" name="w3lName" id="w3lName" placeholder="Name" required="">
+                            <input type="email" class="form-control" name="w3lSender" id="w3lSender" placeholder="Email" required="">
+                            <input type="number" class="form-control" name="w3lphone" id="w3lphone" placeholder="Phone Number" required="">
+                            <input type="text" class="form-control" name="w3lSubject" id="w3lSubject" placeholder="Subject" required="">
+                        </div>
+                        <textarea name="w3lMessage" class="form-control" id="w3lMessage" placeholder="Message" required=""></textarea>
+            
+                        <div class="text-right">
+                            <button type="submit" class="service-btn" >Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+                
+            <!-- <div class="map-iframe mt-lg-5 mt-md-5 mt-sm-5 mt-4 pt-lg-2">
+                <iframe src="//www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d317718.69319292053!2d-0.3817765050863085!3d51.528307984912544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon%2C+UK!5e0!3m2!1sen!2spl!4v1562654563739!5m2!1sen!2spl" width="100%" height="300" frameborder="0" style="border: 0px; pointer-events: none;" allowfullscreen=""></iframe>
+            </div> -->
+        </div>
+    </div>
+</section>
+
+<script>
+	console.log(document.querySelector(".submit-form"));
+	document.querySelector(".submit-form").addEventListener("submit", function(event) {
+		event.preventDefault(); // Prevent the default form submission
+		console.log({
+					name: document.getElementById("w3lName").value,
+					email: document.getElementById("w3lSender").value,
+					phone: parseInt(document.getElementById("w3lphone").value),
+					subject: document.getElementById("w3lSubject").value,
+					message: document.getElementById("w3lMessage").value
+				});
+		try {
+			fetch("http://127.0.0.1:8000/users", {
+				method: "POST",
+				headers: {
+					"Content-Type": "application/json"
+				},
+				body: JSON.stringify({
+					name: document.getElementById("w3lName").value,
+					email: document.getElementById("w3lSender").value,
+					phone: parseInt(document.getElementById("w3lphone").value),
+					subject: document.getElementById("w3lSubject").value,
+					message: document.getElementById("w3lMessage").value
+				})
+			}).then(function(response) {
+				if (response.ok) {		
+					alert("Thank you for contacting us! We will get back to you soon.");
+					document.querySelector(".submit-form").reset(); // Reset the form
+				} else {
+					alert("There was a problem submitting your form. Please try again.");
+				}});
+			} catch(error) {
+				console.error("Error:", error);
+				alert("There was a problem submitting your form. Please try again.");
+			}
+		});
+</script>
+
+	<section class="faq-content" id="contact">
+    <div class="contact-sec	editContent">
+        <div class="container">
+			<h2>Frequently Asked Questions (FAQ)</h2><br><br>
+			<div>
+				<b>1. What is ILAK TECH?</b><br>
+				ILAK TECH is an HR and technology services company providing recruitment, staffing, training, and placement solutions with a focus on innovation and inclusion.<br>
+				<b>2. What services does ILAK TECH offer?</b><br>
+				We offer recruitment & staffing, HR consulting, payroll support, training & placement assistance, and BPO/KPO manpower solutions.<br>
+				<b>3. Who can use ILAK TECH services?</b><br>
+				Our services are available for employers, corporates, startups, institutions, job seekers, freshers, and experienced professionals.<br>
+				<b>4. Do you provide training with placement support?</b><br>
+				Yes. We provide industry-aligned training along with placement assistance to help candidates become job-ready and secure suitable opportunities.<br>
+				<b>5. Is placement guaranteed after training?</b><br>
+				We offer 100% placement assistance. Final placement depends on candidate performance, eligibility, and employer requirements.<br>
+				<b>6. Which industries do you serve?</b><br>
+				We serve IT & Technology, BPO/KPO, Banking & Finance, Healthcare, Manufacturing, Retail, Sales, and Education sectors.<br>
+				<b>7. Do you support freshers and career switchers?</b><br>	
+				Yes. We actively support freshers, entry-level candidates, and career switchers through training and guidance.<br>
+				<b>8. How can employers partner with ILAK TECH?</b><br>
+				Employers can contact us through the website, submit a requirement, or connect with our team by contact us to discuss hiring needs.<br>
+				<b>9. Do you provide post-placement support?</b><br>
+				Yes. We provide post-placement follow-up to ensure smooth onboarding and long-term success for both candidates and employers.<br>
+				<b>10. Is ILAK TECH available for 24/7 support?</b><br>		
+				Yes. We offer common 24/7 support for employers, clients, and candidates.<br><br><br><br>
+			</div>
+	 	</div>
+    </div>
+
+</section>
+<section class="w3l-footer-29-main">
+	<div class="footer-29 py-5 ">
+	  <div class="container">
+		<div class="grid-col-4 footer-top-29">
+			<div class="footer-list-29 footer-1">
+				<h2 class="footer-title-29">About Company</h2>
+				<p class="para paragraph">ILAK TECH is a modern HR services and training company focused on connecting talent with opportunity. We combine innovative workforce solutions with an inclusive approach to support employers and empower candidates. Our goal is to build strong teams, meaningful careers, and sustainable business growth.</p>
+				<p><a href="about.html">Read More...</a></p>
+				<!-- <div class="main-social-footer-29">
+					<a href="https://www.facebook.com/profile.php?id=61584991512974" class="facebook"><span class="fa fa-facebook"></span></a>
+					<a href="#twitter" class="twitter"><span class="fa fa-twitter"></span></a>
+					<a href="#instagram" class="instagram"><span class="fa fa-instagram"></span></a>
+					<a href="#google-plus" class="google-plus"><span class="fa fa-google-plus"></span></a>
+					<a href="#linkedin" class="linkedin"><span class="fa fa-linkedin"></span></a>
+				</div> -->
+			</div>
+			<div class="footer-list-29 footer-4">
+				<ul>
+					<h6 class="footer-title-29">Useful Links</h6>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="services.html">Service</a></li>
+					<li><a href="about.html">About Us</a></li>
+					<li><a href="#url">Gallery</a></li>
+					<li><a href="contact.html">Contact Us</a></li>
+					<!-- <li><a href="#url">Help</a></li> -->
+				</ul>
+			</div>
+			<div class="footer-list-29 footer-3">
+				<div class="properties">
+					<h6 class="footer-title-29">Reach Us</h6>
+
+				<ul>
+					<li><p><span class="fa fa-map-marker"></span>Madurai, Tamil Nadu, India</p></li>
+					<li><a href="tel:+7-800-999-800"><span class="fa fa-phone"></span> +(21)-255-999-8888</a></li>
+					<li><a href="mailto:estate-mail@support.com" class="mail"><span class="fa fa-envelope-open-o"></span> ilaktechofficial@gmail.com</a></li>
+				</ul>
+			</div>
+			</div>
+			<div class="footer-list-29 footer-3">
+				<div class="properties">
+					<h6 class="footer-title-29">Connect</h6>
+
+				<ul>
+					<li><a href="#instagram" class="social-link instagram"><span class="fa fa-instagram"></span> <p>Instagram</p></a></li>
+					<li><a href="#linkedin" class="social-link linkedin"><span class="fa fa-linkedin"></span> LinkedIn</a></li>
+					<li><a href="https://www.facebook.com/profile.php?id=61584991512974" class="social-link facebook"><span class="fa fa-facebook"></span> Facebook</a></li>
+					<li><a href="#twitter" class="social-link twitter"><span class="fa fa-twitter"></span> Twitter</a></li>
+				</ul>
+			</div>
+			</div>
+			
+		</div>
+		<div class=" bottom-copies row">
+			<p class="copy-footer-29 col-lg-8">@ 2025 - ILAKTECH - all rights are reserved website powered by ILAKTECH</p>
+			<ul class="list-btm-29 col-lg-4">
+				<li><a href="#link">Privacy policy</a></li>
+				<li><a href="#link">Terms of service</a></li>
+			  </ul>
+		</div>
+		</div>
+	</div>
+  </section>
+
+<!-- move top -->
+<button onclick="topFunction()" id="movetop" title="Go to top">
+	<span class="fa fa-level-up"></span>
+</button>
+<script>
+	// When the user scrolls down 20px from the top of the document, show the button
+	window.onscroll = function () {
+		scrollFunction()
+	};
+
+	function scrollFunction() {
+		if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+			document.getElementById("movetop").style.display = "block";
+		} else {
+			document.getElementById("movetop").style.display = "none";
+		}
+	}
+
+	// When the user clicks on the button, scroll to the top of the document
+	function topFunction() {
+		document.body.scrollTop = 0;
+		document.documentElement.scrollTop = 0;
+	}
+</script>
+<!-- /move top -->
+
+</body>
+
+</html>

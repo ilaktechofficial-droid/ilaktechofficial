@@ -1,0 +1,612 @@
+
+<!--
+   Author: W3layouts
+   Author URL: http://w3layouts.com
+-->
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Services</title>
+
+    <!-- Template CSS -->
+    <link rel="stylesheet" href="assets/css/style-starter.css">
+    <link href="//fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+  </head>
+  <body id="home">
+<section class=" w3l-header-4">
+	<!--header-->
+	<header id="site-header" class="site-header">
+		<div class="container">
+			<nav class="navbar navbar-expand-lg navbar-dark stroke">
+				<h1><a class="navbar-brand" href="index.html">
+					<img src="assets/images/logo.png" alt="Your logo" title="Your logo" height="50" width="600" />
+				</a></h1>
+				<!-- if logo is image enable this   
+			<a class="navbar-brand" href="#index.html">
+				<img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
+			</a> -->
+				<button class="navbar-toggler  collapsed bg-gradient" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+					<span class="navbar-toggler-icon fa icon-close fa-times"></span>
+					
+				</button>
+	  
+				<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item @@home__active">
+							<a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item @@about__active">
+							<a class="nav-link" href="about.html">About Us</a>
+						</li>
+						<li class="nav-item active">
+							<a class="nav-link" href="services.html">Services</a>
+						</li>
+							<li class="nav-item mr-2">
+								<a href="contact.html" class="nav-link">Contact</a>
+						</li>
+					</ul>
+				</div>
+				        <!-- toggle switch for light and dark theme -->
+						<div class="mobile-position">
+							<label class="theme-selector">
+							  <input type="checkbox" id="themeToggle">
+							  <i class="gg-sun"></i>
+							  <i class="gg-moon"></i>
+							</label>
+						  </div>
+						  <!-- //toggle switch for light and dark theme -->
+			</nav>
+		</div>
+	  </header>
+	<!--/header-->
+</section>
+<script src="assets/js/jquery-3.3.1.min.js"></script> <!-- Common jquery plugin -->
+<!--bootstrap working-->
+<script src="assets/js/bootstrap.min.js"></script>
+<!--bootstrap working//-->
+<!--/MENU-JS-->
+<script>
+	$(window).on("scroll", function () {
+	  var scroll = $(window).scrollTop();
+  
+	  if (scroll >= 80) {
+		$("#site-header").addClass("nav-fixed");
+	  } else {
+		$("#site-header").removeClass("nav-fixed");
+	  }
+	});
+  
+	//Main navigation Active Class Add Remove
+	$(".navbar-toggler").on("click", function () {
+	  $("header").toggleClass("active");
+	});
+	$(document).on("ready", function () {
+	  if ($(window).width() > 991) {
+		$("header").removeClass("active");
+	  }
+	  $(window).on("resize", function () {
+		if ($(window).width() > 991) {
+		  $("header").removeClass("active");
+		}
+	  });
+	});
+  </script>
+  <!--//MENU-JS-->
+<!-- disable body scroll which navbar is in active -->
+<script>
+$(function () {
+  $('.navbar-toggler').click(function () {
+    $('body').toggleClass('noscroll');
+  })
+});
+</script>
+<!-- disable body scroll which navbar is in active -->
+<!--theme switcher dark and light mode script-->
+<script>
+	const bodyElement = document.querySelector('body');
+	const themeToggle = document.querySelector('#themeToggle');
+	const darkModeMql = window.matchMedia('(prefers-color-scheme: dark)');
+  
+	const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : userPreference(darkModeMql);
+  
+	if (currentTheme) {
+	  bodyElement.classList.add(currentTheme);
+  
+	  if (currentTheme === 'dark') {
+		themeToggle.checked = true;
+	  }
+	}
+  
+	function userPreference(e) {
+	  if (e.matches) {
+		bodyElement.classList.add("dark");
+		bodyElement.classList.remove("light");
+		return "dark"
+	  } else {
+		bodyElement.classList.remove("dark");
+		bodyElement.classList.add("light");
+		return "light"
+	  }
+	}
+  
+	darkModeMql.addListener(userPreference);
+  
+	function themeSwitcher(e) {
+	  if (e.target.checked) {
+		bodyElement.classList.add('dark');
+		localStorage.setItem('theme', 'dark');
+		bodyElement.classList.remove("light");
+	  } else {
+		bodyElement.classList.remove('dark');
+		localStorage.setItem('theme', 'light');
+		bodyElement.classList.add("light");
+	  }
+	}
+  
+	themeToggle.addEventListener('change', themeSwitcher);
+  </script>
+  <!--theme switcher dark and light mode script//-->
+
+
+
+<!-- breadcrumbs -->
+<!--<section class="w3l-inner-banner-main">
+    <div class="about-inner services editContent">
+        <div class="container">   
+
+       <div class="breadcrumbs-sub">
+            <ul class="breadcrumbs-custom-path">
+                <li class="right-side propClone"><a href="index.html" class="editContent">Home <span class="fa fa-angle-right" aria-hidden="true"></span></a> <p></li>
+                <li class="active editContent">Services</li>
+            </ul>
+            </div>
+</div>
+</div>
+</section>-->
+<br>
+<br>
+<section class="w3l-content-with-photo-4" id="about">
+    <div class="content-with-photo4-block editContent">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="">
+                        <img src="assets/images/innovation_meet1.jpg" height="350" width="1000" alt="product" >
+                    </div>
+                </div>
+                <div class="my-bio col-lg-5">
+                    <h3>Innovation meets inclusion</h3>
+                    <p class="para mb-3 paragraph">ILAKTECH delivers end-to-end HR, training, and placement services where innovation meets inclusion.
+We support organizations across IT, Banking & Finance, Manufacturing, Retail, Healthcare, Education,and BPO/KPO sectors.Our recruitment solutions cover permanent, contract, and bulk hiring for technical and non-technical roles.Through innovative, industry-focused training, we enhance employability and job readiness for diverse talent.We ensure seamless placement, onboarding, and post-joining support for employers and candidates alike.Driven by ethical practices and 24/7 support, ILAKTECH builds inclusive growth and long-term success.</p>
+                </div>
+
+            </div>
+			<hr class="horizontal-line" />
+        </div>
+    </div>
+	
+    </div>
+	
+</section>
+
+<!-- breadcrumbs //-->
+<section class="w3l-recent-work-hobbies" id="services">
+	<h2 class="theme-switch-content">ILAKTECH OFFERS</h2>
+    <div class="recent-work editContent">
+        <div class="container">
+            <div class="row service-service text-center">
+                <div class="col-lg-4 col-md-6 col-sm-6 propClone about-line-top ">
+                    <div class="color-white editContent service-testimonial-container">
+                        <div class="icon-back"><span class="fa fa-laptop"></span></div>
+
+                        <h5><a href="#url" class="editContent">IT & ITES</a></h5>
+                        <p class="para editContent">Skilled technical and support staff recruitment.Training and placement for software, support, and IT operations roles.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 propClone about-line-top ">
+                    <div class="color-white editContent service-testimonial-container">
+                        <div class="icon-back"><span class="fa fa-money"></span></div>
+
+                        <h5><a href="#url" class="editContent">Banking & Finance</a></h5>
+                        <p class="para editContent">Back-office, finance operations, and banking support staff.Compliance-focused training and recruitment solutions.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 propClone about-line-top ">
+                    <div class="color-white editContent service-testimonial-container">
+                        <div class="icon-back"> <span class="fa fa-headphones"></span></div>
+
+                        <h5><a href="#url" class="editContent">BPO/KPO</a></h5>
+                        <p class="para editContent">Training focused on communication skills, process knowledge, and performance standards.Recruitment for voice, non-voice, back-office, and knowledge process roles.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 propClone about-line-top ">
+                    <div class="color-white editContent service-testimonial-container">
+                        <div class="icon-back"> <span class="fa fa-industry"></span></div>
+
+                        <h5><a href="#url" class="editContent">Manufacturing</a></h5>
+                        <p class="para editContent">Skilled and semi-skilled workforce hiring.Operations-focused training and manpower solutions.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 propClone about-line-top ">
+                    <div class="color-white editContent service-testimonial-container">
+                        <div class="icon-back"> <span class="fa fa-shopping-cart"></span></div>
+
+                        <h5><a href="#url" class="editContent">Retail/Sales</a></h5>
+                        <p class="para editContent">Customer-facing and sales operations staffing.Soft skills and communication training for retail staff.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 propClone about-line-top ">
+                    <div class="color-white editContent service-testimonial-container">
+                        <div class="icon-back"><span class="fa fa-plus"></span></div>
+                        <h5><a href="#url" class="editContent">Healthcare</a></h5>
+                        <p class="para editContent">Administrative and support staff recruitment.Professionalism and service-oriented training programs.</p>
+                    </div>
+                </div>
+            </div>
+			<hr class="horizontal-line" />
+        </div>
+    </div>
+</section>
+<section class="w3l-services-two" id="services">
+    <div class="service-single-page editContent">
+        <div class="container">
+              <div class="service-grids row">
+                <div class="col-lg-6 ">
+                  <img src="assets/images/training.jpeg" alt="product" class="img-responsive about-me">
+                </div>
+                <div class="cwp4-text col-lg-6 text-left pl-lg-5 align-self">
+                    <h3>Training And Placement Services</h3>
+                  <p class="para paragraph editContent text">
+                    At ILAK TECH, our Training & Placement services are designed to bridge the gap between education and employment. We focus on skill development, career readiness, and job placement to help candidates secure meaningful opportunities while supporting employers with job-ready talent.</p>
+                    <!-- <a href="about.html" class="action-button btn mt-lg-5 mt-4">Read more</a> -->
+                  </div>
+              </div>
+              <!-- <div class="service-grids row pb-0">
+                <div class="service-grid col-lg-6 text-left pr-lg-5 align-self ">
+                  <h6 class="small-title">Boost Your Skills</h6>
+                    <h3>One of a kind learning opportunities</h3>
+                  <p class="para editContent text ">
+                    Moll itia placeat modi expl icabo volup tatum corporis unde Dicta, provident
+                    Rem adipisci Moll itia placeat modi volup tatem tenetur conse quatur.Conseq tenetur conse quatur adipi sicing elit.</p>
+                    <a href="about.html" class="action-button btn mt-lg-5 mt-4">Read more</a>
+                  </div>
+                  <div class="cwp4-text col-lg-6 ">
+                    <img src="assets/images/b8.jpg" alt="product" class="img-responsive about-me">
+                  </div>
+              </div> -->
+    </div>
+</div>
+</section>
+<section class="w3l-recent-work-hobbies" id="services">
+	<h2 class="theme-switch-content">ILAKTECH SERVICES</h2>
+    <div class="recent-work editContent">
+        <div class="container">
+            <div class="row service-service text-center">
+                <div class="col-lg-4 col-md-6 col-sm-6 propClone about-line-top ">
+                    <div class="color-white editContent service-testimonial-container">
+                        <div class="icon-back"><span class="fa fa-code"></span></div>
+
+                        <h5><a href="#url" class="editContent">Skill Development Training</a></h5>
+                        <p class="para editContent">We provide industry-oriented training programs that enhance technical skills, soft skills, and workplace readiness. Our training modules are aligned with current market demands to improve candidate employability.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 propClone about-line-top ">
+                    <div class="color-white editContent service-testimonial-container">
+                        <div class="icon-back"><span class="fa fa-rocket"></span></div>
+
+                        <h5><a href="#url" class="editContent">Career Guidance & Counseling</a></h5>
+                        <p class="para editContent">Our experts offer personalized career guidance to help candidates identify suitable career paths based on their skills, interests, and industry requirements.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 propClone about-line-top ">
+                    <div class="color-white editContent service-testimonial-container">
+                        <div class="icon-back"> <span class="fa fa-book"></span></div>
+
+                        <h5><a href="#url" class="editContent">Interview Preparation</a></h5>
+                        <p class="para editContent">We support candidates with resume building, mock interviews, communication skills, and confidence development to ensure they perform effectively in real interview environments.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 propClone about-line-top ">
+                    <div class="color-white editContent service-testimonial-container">
+                        <div class="icon-back"> <span class="fa fa-graduation-cap"></span></div>
+
+                        <h5><a href="#url" class="editContent">Placement Assistance</a></h5>
+                        <p class="para editContent">ILAK TECH connects trained candidates with suitable job opportunities across IT, Non-IT, BPO, KPO, banking, and service sectors through our employer network.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 propClone about-line-top ">
+                    <div class="color-white editContent service-testimonial-container">
+                        <div class="icon-back"> <span class="fa fa-gears"></span></div>
+
+                        <h5><a href="#url" class="editContent">Industry-Aligned Programs</a></h5>
+                        <p class="para editContent">Our training programs are designed in collaboration with industry requirements, ensuring candidates are job-ready from day one.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 propClone about-line-top ">
+                    <div class="color-white editContent service-testimonial-container">
+                        <div class="icon-back"><span class="fa fa-phone"></span></div>
+                        <h5><a href="#url" class="editContent">Post-Placement Support</a></h5>
+                        <p class="para editContent">We provide follow-up support even after placement to ensure smooth onboarding and long-term career stability.</p>
+                    </div>
+                </div>
+            </div>
+			<hr class="horizontal-line" />
+        </div>
+    </div>
+</section>
+
+<section class="w3l-teams-15">
+	<div class="team-single-main editContent">
+		<div class="container">
+
+		<div  class="row">
+			<div class="column2 col-lg-6">
+			
+				<img src="assets/images/s1.jpeg" alt="product" class="img-responsive ">
+			</div>
+				<div class="nature-row  coloum4 col-lg-6 align-self">
+						<h3>Why Choose ILAK TECH for Training & Placement?</h3>
+						<ul class="para-ul">
+							<li class="para-list">✓ Market-relevant training.</li>
+							<li class="para-list">✓ Appreciating Virtual training as candidate comfort.</li>
+							<li class="para-list">✓ Experienced trainers and mentors.</li>
+							<li class="para-list">✓ Inclusive learning approach.</li>
+							<li class="para-list">✓ 100% placement assistance.</li>
+							<li class="para-list">✓ Continuous candidate support.</li>
+						</ul>
+					</div>
+				</div>
+		</div>
+		</div>
+	</div>
+	
+	<!-- <div class="team-single-main editContent">
+		<div class="container">
+
+		<div  class="row">
+			
+				<div class="nature-row  column2 col-lg-6 align-self">
+						<h3>Our Process</h3>
+						<ul class="para-ul">
+							<li class="para-list">• Requirement Analysis - We understand employer needs and candidate career goals to ensure the right match.</li>
+							<li class="para-list">• Talent Sourcing - We identify, enroll, and shortlist suitable candidates through ethical and innovative sourcing.</li>
+							<li class="para-list">• Screening & Assessment - Candidates are evaluated for skills, attitude, and role suitability.</li>
+							<li class="para-list">• Training & Skill Development - Industry-aligned training, soft skills, and interview preparation are provided.</li>
+							<li class="para-list">• Interview Coordination -  We schedule and manage interviews between candidates and employers smoothly.</li>
+							<li class="para-list">• Selection & Placement - We support final selection, documentation, and onboarding.</li>
+							<li class="para-list">• Post-Placement Support - Continuous support ensures long-term success for both candidates and employers.</li>
+						</ul>
+					</div>
+					<div class="coloum4 col-lg-6">
+			
+				<img src="assets/images/process.png" alt="product" height="400" width="650">
+			</div>
+				</div>
+		</div>
+		</div>
+	</div> -->
+</section>
+
+<section class="w3l-recent-work-hobbies" id="services">
+	<br><h2 class="theme-switch-content">Our Process</h2>
+    <div class="recent-work editContent">
+        <div class="container">
+            <div class="row service-service text-center">
+                <div class="col-lg-4 col-md-6 col-sm-6 propClone about-line-top ">
+                    <div class="color-white editContent service-testimonial-container">
+                        <div class="icon-back"><span class="fa fa-laptop"></span></div>
+
+                        <h5><a href="#url" class="editContent">Requirement Analysis</a></h5>
+                        <p class="para editContent">We understand employer needs and candidate career goals to ensure the right match.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 propClone about-line-top ">
+                    <div class="color-white editContent service-testimonial-container">
+                        <div class="icon-back"><span class="fa fa-money"></span></div>
+
+                        <h5><a href="#url" class="editContent">Screening & Assessment</a></h5>
+                        <p class="para editContent">Candidates are evaluated for skills, attitude, and role suitability.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 propClone about-line-top ">
+                    <div class="color-white editContent service-testimonial-container">
+                        <div class="icon-back"> <span class="fa fa-headphones"></span></div>
+
+                        <h5><a href="#url" class="editContent">Training & Skill Development</a></h5>
+                        <p class="para editContent">Industry-aligned training, soft skills, and interview preparation are provided.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 propClone about-line-top ">
+                    <div class="color-white editContent service-testimonial-container">
+                        <div class="icon-back"> <span class="fa fa-industry"></span></div>
+
+                        <h5><a href="#url" class="editContent">Interview Coordination</a></h5>
+                        <p class="para editContent">We schedule and manage interviews between candidates and employers smoothly.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 propClone about-line-top ">
+                    <div class="color-white editContent service-testimonial-container">
+                        <div class="icon-back"> <span class="fa fa-shopping-cart"></span></div>
+
+                        <h5><a href="#url" class="editContent">Selection & Placement</a></h5>
+                        <p class="para editContent">We support final selection, documentation, and onboarding.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 propClone about-line-top ">
+                    <div class="color-white editContent service-testimonial-container">
+                        <div class="icon-back"><span class="fa fa-plus"></span></div>
+                        <h5><a href="#url" class="editContent">Post-Placement Support</a></h5>
+                        <p class="para editContent">Continuous support ensures long-term success for both candidates and employers.</p>
+                    </div>
+                </div>
+            </div>
+			<hr class="horizontal-line" />
+        </div>
+    </div>
+</section>
+
+<section class="w3l-recent-work-hobbies" id="services">
+	<h2 class="theme-switch-content">WHY ILAKTECH</h2>
+    <div class="recent-work editContent">
+        <div class="container">
+            <div class="row service-service text-center">
+                <div class="col-lg-4 col-md-6 col-sm-6 propClone about-line-top ">
+                    <div class="color-white editContent service-testimonial-container">
+                        <div class="icon-back"><span class="fa fa-laptop"></span></div>
+
+                        <h5><a href="#url" class="editContent">Structured & Transparent Approach</a></h5>
+                        <p class="para editContent">Every step is clearly defined, ensuring transparency for employers, clients, and candidates throughout the journey.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 propClone about-line-top ">
+                    <div class="color-white editContent service-testimonial-container">
+                        <div class="icon-back"><span class="fa fa-money"></span></div>
+
+                        <h5><a href="#url" class="editContent">Innovation-Driven Methods</a></h5>
+                        <p class="para editContent">We use modern sourcing, screening, and training techniques to deliver faster and more accurate results.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 propClone about-line-top ">
+                    <div class="color-white editContent service-testimonial-container">
+                        <div class="icon-back"> <span class="fa fa-headphones"></span></div>
+
+                        <h5><a href="#url" class="editContent">Industry-Aligned Training</a></h5>
+                        <p class="para editContent">Our training programs are designed based on real industry requirements, making candidates job-ready from day one.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 propClone about-line-top ">
+                    <div class="color-white editContent service-testimonial-container">
+                        <div class="icon-back"> <span class="fa fa-industry"></span></div>
+
+                        <h5><a href="#url" class="editContent">Inclusive Hiring Practices</a></h5>
+                        <p class="para editContent">We provide equal opportunities for freshers, experienced professionals, and career switchers.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 propClone about-line-top ">
+                    <div class="color-white editContent service-testimonial-container">
+                        <div class="icon-back"> <span class="fa fa-shopping-cart"></span></div>
+
+                        <h5><a href="#url" class="editContent">Quality-Focused Screening</a></h5>
+                        <p class="para editContent">Candidates are evaluated not just on skills, but also on attitude and cultural fit.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 propClone about-line-top ">
+                    <div class="color-white editContent service-testimonial-container">
+                        <div class="icon-back"><span class="fa fa-plus"></span></div>
+                        <h5><a href="#url" class="editContent">End-to-End Support</a></h5>
+                        <p class="para editContent">From requirement analysis to post-placement follow-up, we support every stage of the process.</p>
+                    </div>
+                </div>
+            </div>
+			<div class="seventh-container">
+				<div class="col-lg-4 col-md-6 col-sm-6 propClone about-line-top ">
+                    <div class="color-white editContent service-testimonial-container">
+                        <div class="icon-back seventh-icon"><span class="fa fa-plus"></span></div>
+                        <h5><a href="#url" class="editContent">Stronger Retention & Satisfaction</a></h5>
+                        <p class="para editContent">Proper alignment between roles and candidates leads to higher retention and long-term success.</p>
+                    </div>
+                </div>
+			</div>
+			<hr class="horizontal-line" />
+        </div>
+    </div>
+</section>
+
+
+<section class="w3l-footer-29-main">
+	<div class="footer-29 py-5 ">
+	  <div class="container">
+		<div class="grid-col-4 footer-top-29">
+			<div class="footer-list-29 footer-1">
+				<h2 class="footer-title-29">About Company</h2>
+				<p class="paragraph">ILAK TECH is a modern HR services and training company focused on connecting talent with opportunity. We combine innovative workforce solutions with an inclusive approach to support employers and empower candidates. Our goal is to build strong teams, meaningful careers, and sustainable business growth.</p>
+				<p><a href="about.html">Read More...</a></p>
+				<!-- <div class="main-social-footer-29">
+					<a href="https://www.facebook.com/profile.php?id=61584991512974" class="facebook"><span class="fa fa-facebook"></span></a>
+					<a href="#twitter" class="twitter"><span class="fa fa-twitter"></span></a>
+					<a href="#instagram" class="instagram"><span class="fa fa-instagram"></span></a>
+					<a href="#google-plus" class="google-plus"><span class="fa fa-google-plus"></span></a>
+					<a href="#linkedin" class="linkedin"><span class="fa fa-linkedin"></span></a>
+				</div> -->
+			</div>
+			<div class="footer-list-29 footer-4">
+				<ul>
+					<h6 class="footer-title-29">Useful Links</h6>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="services.html">Service</a></li>
+					<li><a href="about.html">About Us</a></li>
+					<li><a href="#url">Gallery</a></li>
+					<li><a href="contact.html">Contact Us</a></li>
+					<!-- <li><a href="#url">Help</a></li> -->
+				</ul>
+			</div>
+			<div class="footer-list-29 footer-3">
+				<div class="properties">
+					<h6 class="footer-title-29">Reach Us</h6>
+
+				<ul>
+					<li><p><span class="fa fa-map-marker"></span>Madurai, Tamil Nadu, India</p></li>
+					<li><a href="tel:+7-800-999-800"><span class="fa fa-phone"></span> +(21)-255-999-8888</a></li>
+					<li><a href="mailto:estate-mail@support.com" class="mail"><span class="fa fa-envelope-open-o"></span> ilaktechofficial@gmail.com</a></li>
+				</ul>
+			</div>
+			</div>
+			<div class="footer-list-29 footer-3">
+				<div class="properties">
+					<h6 class="footer-title-29">Connect</h6>
+
+				<ul>
+					<li><a href="#instagram" class="social-link instagram"><span class="fa fa-instagram"></span> <p>Instagram</p></a></li>
+					<li><a href="#linkedin" class="social-link linkedin"><span class="fa fa-linkedin"></span> LinkedIn</a></li>
+					<li><a href="https://www.facebook.com/profile.php?id=61584991512974" class="social-link facebook"><span class="fa fa-facebook"></span> Facebook</a></li>
+					<li><a href="#twitter" class="social-link twitter"><span class="fa fa-twitter"></span> Twitter</a></li>
+				</ul>
+			</div>
+			</div>
+			
+		</div>
+		<div class=" bottom-copies row">
+			<p class="copy-footer-29 col-lg-8">@ 2025 - ILAKTECH - all rights are reserved website powered by ILAKTECH</p>
+			<ul class="list-btm-29 col-lg-4">
+				<li><a href="#link">Privacy policy</a></li>
+				<li><a href="#link">Terms of service</a></li>
+			  </ul>
+		</div>
+		</div>
+	</div>
+  </section>
+<!-- move top -->
+<button onclick="topFunction()" id="movetop" title="Go to top">
+	<span class="fa fa-level-up"></span>
+</button>
+<script>
+	// When the user scrolls down 20px from the top of the document, show the button
+	window.onscroll = function () {
+		scrollFunction()
+	};
+
+	function scrollFunction() {
+		if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+			document.getElementById("movetop").style.display = "block";
+		} else {
+			document.getElementById("movetop").style.display = "none";
+		}
+	}
+
+	// When the user clicks on the button, scroll to the top of the document
+	function topFunction() {
+		document.body.scrollTop = 0;
+		document.documentElement.scrollTop = 0;
+	}
+</script>
+<!-- /move top -->
+
+</body>
+
+</html>
