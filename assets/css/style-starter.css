@@ -2805,7 +2805,7 @@
   width: 100%;
   background-color: rgb(33, 37, 41);
   z-index: 1;
-  top: 0;
+  top: 5;
 }
 
 .dark .faq-content {
